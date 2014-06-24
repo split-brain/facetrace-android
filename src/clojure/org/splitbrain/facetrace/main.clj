@@ -2,7 +2,8 @@
   (:use [neko.activity :only [defactivity set-content-view!]]
         [neko.threading :only [on-ui]]
         [neko.ui :only [make-ui]]
-        [neko.notify :only [toast]]))
+        [neko.notify :only [toast]]
+        [gift.core :only [make-gif]]))
 
 (defactivity org.splitbrain.facetrace.FacetraceActivity
   :def a
@@ -20,13 +21,3 @@
                 [:button {:text "Settings"
                           :on-click (fn [_] (toast "TBD"))}]
                 ])))))
-
-
-
-
-
-
-
-
-
-

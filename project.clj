@@ -12,9 +12,10 @@
   :javac-options ["-target" "1.6" "-source" "1.6" "-Xlint:-options"]
 
   :dependencies [[org.clojure-android/clojure "1.6.0-RC1" :use-resources true]
-                 [neko/neko "3.0.1"]]
+                 [neko/neko "3.0.1"]
+                 [gift/gift-android "0.1.0-SNAPSHOT"]]
   :profiles {:dev {:dependencies [[org.clojure/tools.nrepl "0.2.3"]
-                                  [compliment "0.0.3"]]
+                                  [compliment "0.1.1"]]
                    :android {:aot :all-with-unused}}
              :release {:android
                        {;; Specify the path to your private keystore
